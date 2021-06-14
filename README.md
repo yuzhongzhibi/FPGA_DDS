@@ -1,6 +1,6 @@
 # fpga_dds
 利用 搭载 Xilinx 公司的 xc3s200a-4ft256 芯片开发板及 DAC 电路设计一个简易的信号发生器
-完整文章请参考我的博客 [基于FPGA的DDS项目设计](https://www.yuzhongzhibi.site/index.php/archives/480/)
+完整文章请参考我的博客 [基于FPGA的DDS项目设计](https://drawrain.com/index.php/archives/480/)
 ## 实验项目方案设计
 ### 项目系统设计原理
 主要通过 VHDL 在 FPGA 上实现分配器、控制器、动态显示等模块电路，采用查表法，按照等相位增量将一个周期的正弦波赋值进行量化，通过频率控制字对相位采样，在数码管上显示频率，由 IP 核转换输出电压赋值，经由数模转换器及低通滤波等实际电路得到相应波形。
